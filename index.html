@@ -4,97 +4,100 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Wedding of Mely & Ramdan</title>
-<meta name="description" content="Undangan pernikahan Mely & Ramdan">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
-:root{--ivory:#f7f1e8;--paper:#fffdf9;--champ:#b79b76;--taupe:#756454;--ink:#3f352e;--line:#ded1bf}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#e9e0d5;color:var(--ink);font-family:Montserrat,sans-serif}
-.wrap{max-width:560px;margin:auto;background:var(--paper);min-height:100vh;overflow:hidden;box-shadow:0 0 40px #3b2b1b22}
-section{padding:74px 27px;position:relative;text-align:center}
-.cover{height:100svh;min-height:650px;color:#fff;display:flex;align-items:center;justify-content:center;background:
-linear-gradient(180deg,#4c403455,#3b302b99),url('design-preview.png') center/cover}
-.cover:before{content:"";position:absolute;inset:18px;border:1px solid #fff9}
-.cover .inner{position:relative;z-index:1;padding:20px}
-.kicker{font-size:9px;letter-spacing:4px;text-transform:uppercase}
-h1,h2,.script{font-family:"Cormorant Garamond",serif;font-weight:500}
-h1{font-size:65px;line-height:.8;margin:25px 0}.script{font-style:italic}.amp{font-size:32px;color:#e8d5b8}
-h2{font-size:43px;margin:10px 0 18px}.sub{font-size:11px;line-height:1.9;letter-spacing:.3px}.gold{color:var(--champ)}
-.btn{display:inline-block;border:1px solid currentColor;border-radius:999px;padding:12px 22px;color:inherit;text-decoration:none;font-size:9px;letter-spacing:2px;margin-top:15px}
-.ivory{background:var(--ivory)}.orn{color:var(--champ);font-size:20px;margin:14px}
-.names{font-family:"Cormorant Garamond";font-size:33px;line-height:1.25;color:var(--taupe)}
-.card{background:#fff;border:1px solid var(--line);padding:26px 18px;margin:13px 0}
-.date{font-size:11px;letter-spacing:2px}.muted{color:#786d64;font-size:11px;line-height:1.9}
-.story{text-align:left;max-width:400px;margin:auto;border-left:1px solid #d4c2aa;padding-left:23px}.story article{margin-bottom:30px}.story .year{font-size:9px;letter-spacing:3px;color:var(--champ)}
-.gallery{display:grid;grid-template-columns:2fr 1fr;gap:7px}.gallery div{min-height:150px;background:linear-gradient(135deg,#c8b6a1,#efe5d7);background-size:cover;background-position:center;border-radius:2px}.gallery .big{grid-row:span 2;min-height:307px}
-.count{display:flex;justify-content:center;gap:7px;margin-top:25px}.count div{background:#f1e9de;padding:12px 8px;min-width:64px}.count b{font-family:"Cormorant Garamond";font-size:27px;font-weight:500;display:block}.count small{font-size:7px;letter-spacing:1px}
-.rsvp input,.rsvp select,.rsvp textarea{width:100%;border:1px solid var(--line);background:#fff;padding:13px;margin:5px 0;font:inherit;font-size:11px}.rsvp button{background:var(--taupe);color:#fff;border:0;width:100%;cursor:pointer}
-.footer{background:var(--taupe);color:#fff}.footer .muted{color:#eee}
-.music{position:fixed;right:17px;bottom:17px;z-index:20;width:42px;height:42px;border-radius:50%;border:1px solid #fff;background:var(--taupe);color:#fff}
-.fade{opacity:0;transform:translateY(18px);transition:.8s}.fade.on{opacity:1;transform:none}
-@media(max-width:420px){h1{font-size:56px}}
+:root{--ivory:#f8f3ea;--cream:#eee3d1;--brown:#66564b;--gold:#b99a68;--white:#fffdf9}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--brown);font-family:Georgia,"Times New Roman",serif;line-height:1.7}
+body.locked{overflow:hidden} section{padding:70px 20px}
+.container{max-width:760px;margin:auto} .center{text-align:center}
+.cover{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px;background:linear-gradient(#6a574733,#6a574755),var(--cream)}
+.cover-card{width:min(100%,680px);padding:55px 24px;background:#fffaf2d9;border:1px solid #fff;box-shadow:0 20px 60px #46372a26}
+.kicker{font-size:12px;letter-spacing:4px;text-transform:uppercase}
+h1{font-size:clamp(48px,14vw,86px);font-weight:400;line-height:1;margin:22px 0 10px}
+.names{font-size:clamp(30px,8vw,52px);font-style:italic}
+.date{letter-spacing:2px;margin:22px 0 30px}
+.ornament{color:var(--gold);font-size:28px;text-align:center;margin:8px 0 20px}
+.btn{border:1px solid var(--gold);background:var(--brown);color:white;padding:13px 25px;cursor:pointer;font:inherit;letter-spacing:1px}
+.music{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border:0;border-radius:50%;background:var(--brown);color:white;z-index:20;box-shadow:0 5px 20px #0002}
+.verse{font-style:italic;text-align:center;font-size:18px}
+.couple{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:35px}
+.person,.card,.count{background:#fffdf999;border:1px solid #dfd1bd}
+.person{text-align:center;padding:30px 15px} .person h3,.card h3{font-weight:400}
+.card{padding:28px;margin:18px 0;text-align:center}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:25px 0}
+.count{padding:14px 5px;text-align:center} .count b{display:block;font-size:27px;font-weight:400}
+.fade{opacity:0;transform:translateY(18px);transition:.8s ease} .fade.show{opacity:1;transform:none}
+input,textarea{width:100%;padding:13px;margin:7px 0;border:1px solid #d6c7b5;background:#fffdf9;font:inherit}
+textarea{min-height:110px} .footer{padding:55px 20px;text-align:center;background:#e8dccb}
+.small{font-size:13px;opacity:.8}
+@media(max-width:560px){.couple{grid-template-columns:1fr}section{padding:58px 18px}}
 </style>
 </head>
-<body>
-<div class="wrap">
-<section class="cover" id="home"><div class="inner">
+<body class="locked">
+<audio id="music" preload="auto" loop><source src="Rizky%20Febian%20Feat.%20Mahalini%20-%20Bermuara%20%5BOfficial%20Lyric%20Video%5D%20-%20Rizky%20Febian.mp3" type="audio/mpeg"></audio>
+<button class="music" id="musicBtn">♫</button>
+
+<section class="cover">
+<div class="cover-card">
 <div class="kicker">The Wedding Of</div>
-<h1>Mely<br><span class="amp">&</span><br>Ramdan</h1>
-<p class="script" style="font-size:20px">A beautiful beginning to forever.</p>
-<a class="btn" href="#welcome">Open Invitation</a>
-</div></section>
-
-<section id="welcome" class="ivory fade"><div class="kicker">Assalamu'alaikum Warahmatullahi Wabarakatuh</div>
-<div class="orn">❦</div>
-<p class="sub">Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud mengundang Bapak/Ibu/Saudara/i untuk hadir dalam acara pernikahan kami.</p>
-<div class="names">Ns. Mely Maytun Gosali, S.Kep<br><span class="amp">&</span><br>Muhamad Ramdan</div>
-<p class="muted">Putri dari Bapak Yulianto Gosali<br>Putra dari Alm. Dul Malik</p></section>
-
-<section class="fade"><div class="orn">۞</div>
-<p class="script" style="font-size:22px">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu mendapat ketenangan hati dan dijadikan-Nya di antaramu rasa kasih dan sayang.”</p>
-<p class="date gold">QS. AR-RUM : 21</p></section>
-
-<section class="ivory fade"><div class="kicker">Bride & Groom</div><h2>Mely & Ramdan</h2>
-<div class="card"><div class="names">Ns. Mely Maytun Gosali, S.Kep</div><p class="muted">Putri dari Bapak Yulianto Gosali</p></div>
-<div class="orn">&</div>
-<div class="card"><div class="names">Muhamad Ramdan</div><p class="muted">Putra dari Alm. Dul Malik</p></div></section>
-
-<section class="fade"><div class="kicker">Our Story</div><h2>Perjalanan Kami</h2>
-<div class="story">
-<article><div class="year">PERTEMUAN</div><p class="muted">Dua hati dipertemukan pada waktu yang tidak pernah kami sangka.</p></article>
-<article><div class="year">PERJALANAN</div><p class="muted">Lewat berbagai proses, tawa, air mata, dan doa, kami belajar untuk saling memahami.</p></article>
-<article><div class="year">TUJUAN</div><p class="muted">Kini kami memilih untuk melangkah bersama, membangun kehidupan yang penuh cinta, ketenangan, dan keberkahan.</p></article>
-</div></section>
-
-<section class="ivory fade"><div class="kicker">Save The Date</div><h2>20 · 12 · 2027</h2><p class="date">SABTU • 20 DESEMBER 2027</p>
-<div class="count"><div><b id=d>00</b><small>HARI</small></div><div><b id=h>00</b><small>JAM</small></div><div><b id=m>00</b><small>MENIT</small></div><div><b id=s>00</b><small>DETIK</small></div></div>
-<p class="muted">Sampai jumpa di hari bahagia kami.</p></section>
-
-<section class="fade"><div class="kicker">Wedding Event</div><h2>Akad & Resepsi</h2>
-<div class="card"><div class="kicker gold">Akad Nikah</div><h2 style="font-size:30px">08.00 WIB — Selesai</h2><p class="muted">Di kediaman mempelai wanita<br>Jl. [Alamat lengkap]</p></div>
-<div class="card"><div class="kicker gold">Resepsi</div><h2 style="font-size:30px">[Jam Resepsi]</h2><p class="muted">Di kediaman mempelai wanita<br>Jl. [Alamat lengkap]</p><a class="btn" href="#" onclick="alert('Nanti isi link Google Maps ya 🤍');return false">Lihat Lokasi</a></div></section>
-
-<section class="ivory fade"><div class="kicker">Our Moments</div><h2>Gallery</h2>
-<div class="gallery"><div class="big"></div><div></div><div></div><div></div><div></div></div>
-<p class="muted">Setiap momen adalah bagian dari cerita yang kami pilih untuk selamanya.</p></section>
-
-<section class="fade rsvp"><div class="kicker">RSVP</div><h2>Will You Join Us?</h2><p class="muted">Kehadiran dan doa restu Anda merupakan kebahagiaan bagi kami.</p>
-<input id=name placeholder="Nama lengkap"><select id=att><option>Hadir</option><option>Tidak dapat hadir</option></select><input id=num type=number min=1 value=1 placeholder="Jumlah tamu"><textarea id=msg rows=4 placeholder="Ucapan & doa"></textarea>
-<button class="btn" onclick="rsvp()">Kirim Konfirmasi</button></section>
-
-<section class="ivory fade"><div class="kicker">Leave a Wish</div><h2>Doa & Ucapan</h2><p class="muted">Berikan doa terbaik untuk Mely & Ramdan.</p><div class="card"><p class="script" style="font-size:20px">“Semoga langkah kalian selalu dipenuhi cinta, ketenangan, dan keberkahan.”</p></div></section>
-
-<section class="footer fade"><div class="orn">❦</div><h2 style="color:#fff">Thank You</h2><p class="muted">Terima kasih telah menjadi bagian dari hari bahagia kami.</p><p class="script" style="font-size:28px">Mely & Ramdan</p><p class="date">20 · 12 · 2027</p></section>
+<h1>Mely & Ramdan</h1><div class="ornament">❦</div>
+<div class="date">SENIN • 20 DESEMBER 2027</div>
+<p>Dengan penuh rasa syukur dan bahagia,<br>kami mengundang Bapak/Ibu/Saudara/i<br>untuk hadir di hari istimewa kami.</p>
+<button class="btn" id="openBtn">Buka Undangan</button>
 </div>
-<button class="music" onclick="toggle()">♫</button>
-<audio id=audio loop></audio>
+</section>
+
+<main id="content">
+<section class="fade"><div class="container">
+<div class="ornament">❦</div>
+<p class="verse">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri, supaya kamu merasa tenteram kepadanya, dan dijadikan-Nya di antaramu rasa kasih dan sayang.”</p>
+<p class="center small">QS. Ar-Rum: 21</p>
+</div></section>
+
+<section class="fade"><div class="container">
+<div class="kicker center">The Bride & The Groom</div>
+<div class="couple">
+<div class="person"><div class="ornament">♡</div><h3>Ns. Mely Maytun Gosali, S.Kep</h3><p>Putri dari<br><b>Bapak Yulianto Gosali</b></p></div>
+<div class="person"><div class="ornament">♡</div><h3>Muhamad Ramdan</h3><p>Putra dari<br><b>Alm. Dul Malik</b></p></div>
+</div></div></section>
+
+<section class="fade"><div class="container">
+<div class="kicker center">Our Special Day</div><h2 class="center" style="font-weight:400;font-size:38px">Save The Date</h2>
+<div class="countdown">
+<div class="count"><b id="days">0</b>Hari</div><div class="count"><b id="hours">0</b>Jam</div>
+<div class="count"><b id="mins">0</b>Menit</div><div class="count"><b id="secs">0</b>Detik</div>
+</div>
+<div class="card"><h3>Akad Nikah</h3><p><b>08.00 WIB – selesai</b></p><p>Kediaman Mempelai Wanita</p></div>
+<div class="card"><h3>Resepsi</h3><p><b>Waktu menyusul</b></p><p>Kediaman Mempelai Wanita</p></div>
+</div></section>
+
+<section class="fade center"><div class="container">
+<div class="kicker">A Little Story</div><h2 style="font-weight:400;font-size:38px">Two Hearts, One Journey</h2>
+<p>Setiap pertemuan memiliki cerita. Setiap langkah membawa kami semakin dekat pada satu tujuan: membangun kehidupan bersama dalam cinta, doa, dan keberkahan.</p>
+</div></section>
+
+<section class="fade"><div class="container">
+<div class="kicker center">RSVP</div><h2 class="center" style="font-weight:400;font-size:38px">Konfirmasi Kehadiran</h2>
+<p class="center small">Nomor WhatsApp RSVP bisa ditambahkan nanti.</p>
+<input placeholder="Nama"><input placeholder="Jumlah tamu" type="number" min="1"><textarea placeholder="Ucapan & doa"></textarea>
+<div class="center"><button class="btn" onclick="alert('RSVP akan dihubungkan ke WhatsApp setelah nomor ditambahkan 🤍')">Kirim RSVP</button></div>
+</div></section>
+
+<section class="fade center"><div class="container"><div class="ornament">❦</div>
+<p>Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu.</p><p><b>Mely & Ramdan</b></p>
+</div></section>
+</main>
+<footer class="footer"><div class="kicker">Thank You</div><p class="small">The Wedding of Mely & Ramdan • 20.12.2027</p></footer>
+
 <script>
-/* CATATAN: 20 Desember 2027 sebenarnya jatuh pada SENIN, bukan Sabtu.
-   Setelah konfirmasi tanggal, ubah teks hari dan target countdown di bawah. */
-const target=new Date("2027-12-20T08:00:00+07:00").getTime();
-function clock(){let x=Math.max(0,target-Date.now());d.textContent=Math.floor(x/86400000);h.textContent=Math.floor(x/3600000%24).toString().padStart(2,'0');m.textContent=Math.floor(x/60000%60).toString().padStart(2,'0');s.textContent=Math.floor(x/1000%60).toString().padStart(2,'0')}clock();setInterval(clock,1000);
-new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('on')),{threshold:.1}).observe(document.querySelector('.fade'));
-document.querySelectorAll('.fade').forEach(x=>new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('on')),{threshold:.1}).observe(x));
-function toggle(){let a=document.getElementById('audio'); if(!a.src){alert('File musik belum dimasukkan. Tambahkan musik pilihanmu sebagai music.mp3.');return}a.paused?a.play():a.pause()}
-function rsvp(){let n=document.getElementById('name').value.trim();if(!n){alert('Isi nama dulu ya 🤍');return}alert('RSVP siap dihubungkan ke WhatsApp setelah nomor penerima dimasukkan.')}
+const music=document.getElementById('music'), musicBtn=document.getElementById('musicBtn');
+async function playMusic(){try{await music.play();musicBtn.textContent='❚❚'}catch(e){musicBtn.textContent='♫'}}
+document.getElementById('openBtn').onclick=()=>{document.body.classList.remove('locked');document.getElementById('content').scrollIntoView({behavior:'smooth'});playMusic()};
+musicBtn.onclick=()=>{music.paused?playMusic():(music.pause(),musicBtn.textContent='♫')};
+const target=new Date('2027-12-20T08:00:00+07:00').getTime();
+function tick(){let d=Math.max(0,target-Date.now());days.textContent=Math.floor(d/86400000);hours.textContent=Math.floor(d/3600000)%24;mins.textContent=Math.floor(d/60000)%60;secs.textContent=Math.floor(d/1000)%60}
+tick();setInterval(tick,1000);
+const ob=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('show')),{threshold:.12});
+document.querySelectorAll('.fade').forEach(e=>ob.observe(e));
 </script>
 </body></html>
